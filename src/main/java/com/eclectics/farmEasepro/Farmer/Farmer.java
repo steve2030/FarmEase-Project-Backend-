@@ -1,10 +1,11 @@
 package com.eclectics.farmEasepro.Farmer;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 @Entity
 public class Farmer {
-
+@Id
     private Long id;
 
     private String firstName;
