@@ -1,6 +1,8 @@
 package com.eclectics.farmEasepro.Farmer;
 
+import jakarta.persistence.Entity;
 
+@Entity
 public class Farmer {
 
     private Long id;
