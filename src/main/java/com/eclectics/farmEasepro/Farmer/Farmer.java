@@ -1,46 +1,48 @@
 package com.eclectics.farmEasepro.Farmer;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 @Entity
-
 public class Farmer {
-@Id
-
-//@GeneratedValue(strategy = GenerationType.IDENTITY)
-@GeneratedValue(strategy = GenerationType.IDENTITY )
+    @Id
+//
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String firstName;
-
-    private String lastName;
-
-
-
+    private String secondName;
     private String email;
+    private String phoneNo;
+    private String County;
+    private String localArea;
 
-    private String phoneNumber;
-
-
-//    constructor class
-//default constructor class
+//    default constructor
 
     public Farmer(Long id) {
         this.id = id;
     }
 
-    //second constructor
+//    the other constructor
 
-    public Farmer(Long id, String firstName, String lastName, String email, String phoneNumber) {
+    public Farmer(Long id,
+                  String firstName,
+                  String secondName,
+                  String email,
+                  String phoneNo,
+                  String county,
+                  String localArea) {
+
         this.id = id;
         this.firstName = firstName;
-        this.lastName = lastName;
+        this.secondName = secondName;
         this.email = email;
-        this.phoneNumber = phoneNumber;
+        this.phoneNo = phoneNo;
+        County = county;
+        this.localArea = localArea;
     }
-
-
-//    getters and setters
+// getters and setters
 
     public Long getId() {
         return id;
@@ -58,12 +60,12 @@ public class Farmer {
         this.firstName = firstName;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getSecondName() {
+        return secondName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setSecondName(String secondName) {
+        this.secondName = secondName;
     }
 
     public String getEmail() {
@@ -74,16 +76,41 @@ public class Farmer {
         this.email = email;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getPhoneNo() {
+        return phoneNo;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setPhoneNo(String phoneNo) {
+        this.phoneNo = phoneNo;
     }
 
-//    to_string
+    public String getCounty() {
+        return County;
+    }
+
+    public void setCounty(String county) {
+        County = county;
+    }
+
+    public String getLocalArea() {
+        return localArea;
+    }
+
+    public void setLocalArea(String localArea) {
+        this.localArea = localArea;
+    }
 
 
-
-
+    @Override
+    public String toString() {
+        return "Farmer{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", secondName='" + secondName + '\'' +
+                ", email='" + email + '\'' +
+                ", phoneNo='" + phoneNo + '\'' +
+                ", County='" + County + '\'' +
+                ", localArea='" + localArea + '\'' +
+                '}';
+    }
+}
