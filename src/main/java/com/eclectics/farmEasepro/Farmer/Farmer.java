@@ -23,7 +23,11 @@ public class Farmer {
 
 
 //    constructor class
+//default constructor class
 
+    public Farmer(Long id) {
+        this.id = id;
+    }
 
     //second constructor
     public Farmer(Long id,
