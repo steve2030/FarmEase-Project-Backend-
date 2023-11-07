@@ -15,15 +15,13 @@ public class FarmerService {
 
     // Post Method
     public List<Farmer>getFarmers(){
+        List<Farmer> farmers = farmerRepository.findAll();
 
-        return farmerRepository.findAll();
+        return farmers;
     }
 
-//    Getting  A single Farmer by id
-    public Optional getFarmer(){
-        return farmerRepository.findById(Id);
-    }
-//    Creating a New Farmer
+
+
 
 
 
