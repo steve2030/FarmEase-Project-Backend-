@@ -1,9 +1,6 @@
 package com.eclectics.farmEasepro.Farmer;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Farmer {
@@ -11,11 +8,18 @@ public class Farmer {
 //
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "FirstName")
     private String firstName;
+    @Column(name = "SecondName")
     private String secondName;
+    @Column(name = "E-mail")
     private String email;
+    @Column(name = "PhoneNumber")
     private String phoneNo;
+    @Column(name = "County")
     private String County;
+    @Column(name = "LocalArea")
     private String localArea;
 
 //    default constructor
