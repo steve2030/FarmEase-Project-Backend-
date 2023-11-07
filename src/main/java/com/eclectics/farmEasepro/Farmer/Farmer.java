@@ -9,23 +9,23 @@ public class Farmer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "FirstName")
+    @Column
     private String firstName;
-    @Column(name = "SecondName")
+    @Column
     private String secondName;
-    @Column(name = "E-mail")
+    @Column
     private String email;
-    @Column(name = "PhoneNumber")
+    @Column
     private String phoneNo;
-    @Column(name = "County")
+    @Column
     private String County;
-    @Column(name = "LocalArea")
+    @Column
     private String localArea;
 
 //    default constructor
 
-    public Farmer(Long id) {
-        this.id = id;
+    public Farmer() {
+
     }
 
 //    the other constructor

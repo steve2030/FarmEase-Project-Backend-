@@ -10,7 +10,7 @@ import java.util.List;
 public class FarmerController {
 @Autowired
 private FarmerService farmerService;
-    @GetMapping(path = "api/v1/farmers")
+    @GetMapping(path = "/api/v1/farmers")
     public List<Farmer>getFarmers(){
         return farmerService.getFarmers();
     }
