@@ -30,26 +30,15 @@ public class Farmer {
     }
 
     //second constructor
-    public Farmer(Long id,
-                  String firstName,
-                  String lastName,
-                  String email,
-                  int phoneNumber
-    ) {
+
+    public Farmer(Long id, String firstName, String lastName, String email, String phoneNumber) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.phoneNumber = phoneNumber;
     }
-//third constructor
 
-//    public Farmer(String firstName, String lastName, String email, int phoneNumber) {
-//        this.firstName = firstName;
-//        this.lastName = lastName;
-//        this.email = email;
-//        this.phoneNumber = phoneNumber;
-//    }
 
 //    getters and setters
 
@@ -85,26 +74,16 @@ public class Farmer {
         this.email = email;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
 //    to_string
 
-    @Override
-    public String toString() {
-        return "Farmer{" +
-                "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' +
-                ", phoneNumber=" + phoneNumber +
-                '}';
-    }
-}
+
 
 
