@@ -101,5 +101,16 @@ public class Farmer {
     }
 
 
-
+    @Override
+    public String toString() {
+        return "Farmer{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", secondName='" + secondName + '\'' +
+                ", email='" + email + '\'' +
+                ", phoneNo='" + phoneNo + '\'' +
+                ", County='" + County + '\'' +
+                ", localArea='" + localArea + '\'' +
+                '}';
+    }
 }
