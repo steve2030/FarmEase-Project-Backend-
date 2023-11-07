@@ -19,15 +19,11 @@ public class Farmer {
 
     private String email;
 
-    private int  phoneNumber;
+    private String phoneNumber;
 
 
 //    constructor class
 
-    //first consructor
-    public Farmer(Long id) {
-        this.id = id;
-    }
 
     //second constructor
     public Farmer(Long id,
