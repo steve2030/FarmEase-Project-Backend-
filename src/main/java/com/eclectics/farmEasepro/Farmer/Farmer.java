@@ -42,5 +42,64 @@ public class Farmer {
         County = county;
         this.localArea = localArea;
     }
+// getters and setters
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getSecondName() {
+        return secondName;
+    }
+
+    public void setSecondName(String secondName) {
+        this.secondName = secondName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhoneNo() {
+        return phoneNo;
+    }
+
+    public void setPhoneNo(String phoneNo) {
+        this.phoneNo = phoneNo;
+    }
+
+    public String getCounty() {
+        return County;
+    }
+
+    public void setCounty(String county) {
+        County = county;
+    }
+
+    public String getLocalArea() {
+        return localArea;
+    }
+
+    public void setLocalArea(String localArea) {
+        this.localArea = localArea;
+    }
+
+
 
 }
