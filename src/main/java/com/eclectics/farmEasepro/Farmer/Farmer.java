@@ -82,10 +82,8 @@ public class Farmer {
         this.phoneNumber = phoneNumber;
     }
 
-
 //    to_string
 
 
-}
 
 
