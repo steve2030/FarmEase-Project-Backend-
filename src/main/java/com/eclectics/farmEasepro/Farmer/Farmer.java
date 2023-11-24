@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 
 @Entity
 
+
+
 public class Farmer {
     @Id
 
